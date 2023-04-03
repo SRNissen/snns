@@ -9,9 +9,16 @@
 
 namespace snns
 {
+
+	enum class erase_result
+	{
+		ok,
+		
+	}
+
 	namespace //anonymous namespace for helper functions that shouldn't be used elsewhere
 	{
-l		bool valid_arguments_for_erase_indices(	std::vector<T> const & container,
+		bool valid_arguments_for_erase_indices(	std::vector<T> const & container,
 							std::span<std::vector<T>::size_type> indices)
 		{
 			for(auto index : indices)
